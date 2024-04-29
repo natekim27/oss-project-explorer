@@ -112,10 +112,10 @@ const ProjectForm = forwardRef((props, ref) => {
 
       data.push(formData);
 
-      const response = await fetch("https://publicactiontrigger.azurewebsites.net/api/dispatches/gt-ospo/oss-project-explorer", {
+      const response = await fetch("https://publicactiontrigger.azurewebsites.net/api/dispatches/natekim27/oss-project-explorer", {
         method: 'POST',
         mode: 'cors',
-        body: JSON.stringify({ event_type: "update-json-event", client_payload: { data: JSON.stringify(data, null, 2) } })
+        body: JSON.stringify({ event_type: "update-json-event", client_payload: { data: data } })
       });
 
       if (response.status == 200) {

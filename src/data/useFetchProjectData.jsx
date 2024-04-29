@@ -6,7 +6,7 @@ const useFetchProjectData = () => {
     useEffect(() => {
         async function fetchProjects() {
             try {
-                const response = await fetch("https://raw.githubusercontent.com/gt-ospo/oss-project-explorer-data/json-form-test/project_list.json");
+                const response = await fetch("https://raw.githubusercontent.com/natekim27/oss-project-explorer-data/json-form-test/project_list.json");
                 const projects = await response.json()
 
                 setProjects(projects);
