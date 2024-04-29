@@ -67,6 +67,29 @@
           ],
           "projectUrl": "http://crawr-data.com/",
           "guidelinesUrl": "http://qgeyxf-data.com/"
+        },
+        {
+          "projectName": "Neural-Forge",
+          "projectAbstract": "Exploring the intersection of Bioscience with a strong emphasis on to address critical challenges.",
+          "projectAreas": [
+            "Bioscience",
+            "HCI"
+          ],
+          "licenses": [
+            "BSD-3"
+          ],
+          "contacts": [
+            {
+              "name": "Morgan Jones",
+              "email": "mjones@example.com"
+            },
+            {
+              "name": "Riley Davis",
+              "email": "rdavis@example.org"
+            }
+          ],
+          "projectUrl": "http://crawr-data.com/",
+          "guidelinesUrl": "http://qgeyxf-data.com/"
         }
       ]
     }

@@ -13,8 +13,7 @@ jobs:
       with:
         repository: 'natekim27/oss-project-explorer-data'
         ref: 'json-form-test'
-        token: ${{ secrets.GITHUB_TOKEN }}
-
+        token: ${{ secrets.TEST_EXPLORER_TOKEN }}
     - name: Update JSON File
       run: |
         echo '${{ toJson(github.event.client_payload.data) }}' > project_list.json
@@ -31,7 +30,7 @@ jobs:
     - name: Create Pull Request
       uses: repo-sync/pull-request@v2
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        github_token: ${{ secrets.TEST_EXPLORER_TOKEN }}
         source_branch: 'json-form-test'
         destination_branch: 'main'
         pr_title: 'Add new project to project_list.json'
